@@ -113,6 +113,30 @@
     
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Talk-to-Agent button styles (added) -->
+    <style>
+        .btn-talk-agent {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #6c5ce7;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(108, 92, 231, 0.35);
+        }
+        .btn-talk-agent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(108, 92, 231, 0.5);
+        }
+        .btn-talk-agent i {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -130,6 +154,10 @@
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
+            <!-- Talk to AI Agent (added) -->
+            <a href="https://elevenlabs.io/app/talk-to?agent_id=agent_1501kzt9qp12e00ay3m3bxkb219t&branch_id=agtbrch_5801kzt9qqfwe3kbn5vs05v6dw4n" target="_blank" rel="noopener noreferrer" class="btn-talk-agent">
+                <i class="fas fa-headset"></i> Talk to our AI Agent
+            </a>
             <a href="#contact" class="btn-primary">Contact Us</a>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -151,6 +179,10 @@
                 <div class="hero-buttons">
                     <a href="#services" class="btn-primary">Explore Solutions</a>
                     <a href="#contact" class="btn-secondary">Get a Quote</a>
+                    <!-- Talk to AI Agent (added) -->
+                    <a href="https://elevenlabs.io/app/talk-to?agent_id=agent_1501kzt9qp12e00ay3m3bxkb219t&branch_id=agtbrch_5801kzt9qqfwe3kbn5vs05v6dw4n" target="_blank" rel="noopener noreferrer" class="btn-talk-agent">
+                        <i class="fas fa-headset"></i> Talk to our AI Agent
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
@@ -292,6 +324,10 @@
                     <a href="https://www.youtube.com/@CreatorsMindOfficial"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.linkedin.com/company/creators-mind"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                <!-- Talk to AI Agent (added) -->
+                <a href="https://elevenlabs.io/app/talk-to?agent_id=agent_1501kzt9qp12e00ay3m3bxkb219t&branch_id=agtbrch_5801kzt9qqfwe3kbn5vs05v6dw4n" target="_blank" rel="noopener noreferrer" class="btn-talk-agent" style="margin-top: 16px;">
+                    <i class="fas fa-headset"></i> Talk to our AI Agent
+                </a>
             </div>
             <div class="footer-col">
                 <h3>Quick Links</h3>
@@ -316,7 +352,7 @@
         </div>
     </footer>
 
-    <!-- ElevenLabs Conversational AI Agent -->
+    <!-- ElevenLabs Conversational AI Agent (embedded widget) -->
     <elevenlabs-convai agent-id="agent_1501kzt9qp12e00ay3m3bxkb219t"></elevenlabs-convai>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
